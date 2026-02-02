@@ -1,4 +1,4 @@
-# 🧃 Batsu-Remix
+# 🎭 Batsu-Remix
 
 This is what happens when you **want that minimalist WM look**...  
 but can’t commit to 500 lines of `config` and Lua sorcery 😅  
@@ -15,7 +15,7 @@ Perfect for lazy perfectionists™.
 ## 🎨 Features
 
 - 🌑 **Batsu-Remix** theme applied system-wide.
-- 🌈 Our bro Tatsuya Suo contemplating his life choices 🥲.
+- 😖 Our bro Tatsuya Suo contemplating his life choices 🥲.
 - 🔢 Devnagri numbers using the [Kara](https://www.pling.com/p/2200890) widget..
 - 🎨 App icons themed with [Papirus](https://www.pling.com/p/1166289/).
 - 🧠 Fonts used like a nerd who cares:
