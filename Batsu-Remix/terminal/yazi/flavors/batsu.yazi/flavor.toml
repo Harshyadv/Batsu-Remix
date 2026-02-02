@@ -1,0 +1,128 @@
+#----------------------------------------------------------
+#--  FLAVOR: Batsu Earth (Recolored from Kanagawa)
+#----------------------------------------------------------
+
+[manager]
+# Marker colors mapped to Batsu Tones
+marker_copied = { fg = "#935845", bg = "#935845" }
+marker_cut = { fg = "#D5441C", bg = "#D5441C" }
+marker_marked = { fg = "#8F6C92", bg = "#8F6C92" }
+marker_selected = { fg = "#D86432", bg = "#D86432" }
+
+cwd = { fg = "#DDA895" }
+
+# Square selection bars: removing rounded corners via prefix/suffix
+hovered = { bg = "#201A18", fg = "#F3E6E9", bold = true }
+prefix = { open = "", close = "" }
+suffix = { open = "", close = "" }
+
+preview_hovered = { bg = "#201A18", fg = "#DDA895", underline = true }
+
+find_keyword = { fg = "#D5441C", bg = "#110D0B", bold = true, italic = true }
+find_position = { fg = "#8F6C92", bg = "reset" }
+
+tab_active = { fg = "#110D0B", bg = "#DDA895", bold = true }
+tab_inactive = { fg = "#AD9992", bg = "#201A18" }
+tab_width = 1
+
+count_copied = { fg = "#F3E6E9", bg = "#935845" }
+count_cut = { fg = "#F3E6E9", bg = "#D5441C" }
+count_selected = { fg = "#110D0B", bg = "#DDA895" }
+
+border_symbol = "│"
+border_style = { fg = "#3A342E" }
+
+
+[mode]
+# Normal mode matches your Oh-My-Posh Path color
+normal_main = { fg = "#110D0B", bg = "#D86432", bold = true }
+normal_alt = { fg = "#D86432", bg = "#201A18" }
+select_main = { fg = "#F3E6E9", bg = "#8F6C92", bold = true }
+select_alt = { fg = "#8F6C92", bg = "#201A18" }
+unset_main = { fg = "#F3E6E9", bg = "#D5441C", bold = true }
+unset_alt = { fg = "#D5441C", bg = "#201A18" }
+
+
+[status]
+# Explicitly removing rounded separators for a sharp look
+sep_left = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+overall = { fg = "#F3E6E9", bg = "#110D0B" }
+
+progress_label = { fg = "#DDA895", bg = "#201A18", bold = true }
+progress_normal = { fg = "#201A18", bg = "#110D0B" }
+progress_error = { fg = "#D5441C", bg = "#110D0B" }
+
+perm_type = { fg = "#935845" }
+perm_read = { fg = "#DDA895" }
+perm_write = { fg = "#D5441C" }
+perm_exec = { fg = "#8F6C92" }
+perm_sep = { fg = "#3A342E" }
+
+
+[pick]
+border = { fg = "#8F6C92" }
+active = { fg = "#D86432", bold = true }
+inactive = {}
+
+[input]
+border = { fg = "#DDA895" }
+title = {}
+value = {}
+selected = { reversed = true }
+
+[completion]
+border = { fg = "#DDA895" }
+active = { reversed = true }
+inactive = {}
+
+[tasks]
+border = { fg = "#8F6C92" }
+title = {}
+hovered = { fg = "#D86432" }
+
+[which]
+cols = 2
+separator = " - "
+separator_style = { fg = "#AD9992" }
+mask = { bg = "#110D0B" }
+rest = { fg = "#AD9992" }
+cand = { fg = "#DDA895" }
+desc = { fg = "#8F6C92" }
+
+[help]
+on = { fg = "#8F6C92" }
+run = { fg = "#D86432" }
+desc = {}
+hovered = { reversed = true, bold = true }
+footer = { fg = "#110D0B", bg = "#F3E6E9" }
+
+[notify]
+title_info = { fg = "#935845" }
+title_warn = { fg = "#DDA895" }
+title_error = { fg = "#D5441C" }
+
+[filetype]
+rules = [
+    # images
+    { mime = "image/*", fg = "#DDA895" },
+
+    # media
+    { mime = "{audio,video}/*", fg = "#935845" },
+
+    # archives
+    { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#D5441C" },
+
+    # documents
+    { mime = "application/{pdf,doc,rtf,vnd.*}", fg = "#F3E6E9" },
+
+    # broken links
+    { name = "*", is = "orphan", fg = "#D5441C", bg = "#110D0B" },
+
+    # executables
+    { name = "*", is = "exec", fg = "#8F6C92", bold = true },
+
+    # fallback
+    { name = "*", fg = "#F3E6E9" },
+    { name = "*/", fg = "#AD9992", bold = true },
+]
