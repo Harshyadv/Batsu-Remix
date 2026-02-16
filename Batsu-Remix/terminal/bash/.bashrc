@@ -52,13 +52,12 @@ batsu_venv() {
     [ -n "$VIRTUAL_ENV" ] && echo -e " \[\e[35m\][py]\[\e[0m\]"
 }
 
-# 3. Construct PS1: [Time] User@Host Path [Venv] [Git] $
-# Re-inserted \u@\h to keep the "Stock" feel at the front
-export PS1="\[\e[37m\][\t] \[\e[32m\]\u@\h \[\e[34m\]\w\$(batsu_venv)\$(batsu_git) \[\e[32m\]\$ \[\e[0m\]"
-
-# 4. Navigation Aliases (Fish-style)
+# 3. Navigation Aliases (Fish-style)
 alias ..='cd ..'
 alias ...='cd ../..'
 
 # Jekyll Development Alias
 alias jserve='bundle exec jekyll serve --baseurl /HYDV'
+
+# 4. Just change this line: no more export
+PS1="\[\e[37m\][\t] \[\e[32m\]\u@\h \[\e[34m\]\w\$(batsu_venv)\$(batsu_git) \[\e[32m\]\$ \[\e[0m\]"
