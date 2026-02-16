@@ -43,15 +43,10 @@ get_git_info() {
     echo -e " ${color}(${branch}${sync})\[\e[0m\]"
 }
 
-# 2. Python Environment Helper
-get_venv() {
-    [[ -n "$VIRTUAL_ENV" ]] && echo -e " \[\e[35m\][py]\[\e[0m\]"
-}
-
-# 3. Shortcuts
+# 2. Shortcuts
 alias ..='cd ..'
 alias ...='cd ../..'
 alias jserve='bundle exec jekyll serve --baseurl /HYDV'
 
-# 4. Final Prompt Construction
+# 3. Final Prompt Construction
 PS1="\[\e[37m\][\t] \[\e[32m\]\u@\h \[\e[34m\]\w\$(get_venv)\$(get_git_info) \[\e[32m\]\$ \[\e[0m\]"
