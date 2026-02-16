@@ -29,24 +29,25 @@ get_git_info() {
     local branch=$(git branch 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/')
     [[ -z "$branch" ]] && return
 
-    # Color: Red if dirty, Green if clean
+    # Green if clean, Red if dirty
     local color="\[\e[32m\]"
     [[ -n $(git status -s 2>/dev/null) ]] && color="\[\e[31m\]"
 
-    # Check sync status with remote
+    # Sync status
     local ahead=$(git rev-list --count @{u}..HEAD 2>/dev/null)
     local behind=$(git rev-list --count HEAD..@{u} 2>/dev/null)
     local sync=""
-    [[ "$ahead" -gt 0 ]] && sync+=" +$ahead"
-    [[ "$behind" -gt 0 ]] && sync+=" -$behind"
+    [[ "$ahead" -gt 0 ]] && sync+=" ↑$ahead"
+    [[ "$behind" -gt 0 ]] && sync+=" ↓$behind"
 
     echo -e " ${color}(${branch}${sync})\[\e[0m\]"
 }
 
-# 2. Shortcuts
-alias ..='cd ..'
-alias ...='cd ../..'
-alias jserve='bundle exec jekyll serve --baseurl /HYDV'
+# 2. Final Prompt Construction (All ANSI)
+PS1="\[\e[97m\][\t] \
+\[\e[32m\]\u@\h \
+\[\e[33m\]\w\
+\$(get_git_info) \
+\[\e[93m\]\$ \
+\[\e[0m\]"
 
-# 3. Final Prompt Construction
-PS1="\[\e[37m\][\t] \[\e[32m\]\u@\h \[\e[34m\]\w\$(get_venv)\$(get_git_info) \[\e[32m\]\$ \[\e[0m\]"

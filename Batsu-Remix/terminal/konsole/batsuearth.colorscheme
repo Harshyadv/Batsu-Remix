@@ -1,0 +1,129 @@
+[Background]
+Color=18,13,11
+
+[BackgroundFaint]
+Color=32,26,24
+
+[BackgroundIntense]
+Color=10,7,6
+
+
+# --- ANSI 0 : Black / Base ---
+[Color0]
+Color=32,26,24
+Comment=Black (Window Background)
+
+[Color0Faint]
+Color=58,52,46
+
+[Color0Intense]
+Color=102,88,78
+
+
+# --- ANSI 1 : Red / Negative ---
+[Color1]
+Color=230,60,70
+Comment=Red (Negative / Error)
+
+[Color1Faint]
+Color=180,45,55
+
+[Color1Intense]
+Color=255,110,110
+
+
+# --- ANSI 2 : Green / Positive ---
+[Color2]
+Color=50,220,110
+Comment=Green (Positive / Success)
+
+[Color2Faint]
+Color=40,170,85
+
+[Color2Intense]
+Color=130,255,170
+
+
+# --- ANSI 3 : Yellow / Neutral ---
+[Color3]
+Color=255,180,0
+Comment=Yellow (Warning / Neutral)
+
+[Color3Faint]
+Color=216,140,0
+
+[Color3Intense]
+Color=255,230,120
+
+
+# --- ANSI 4 : Blue / Link ---
+[Color4]
+Color=255,120,40
+Comment=Orange Link (Accent)
+
+[Color4Faint]
+Color=200,90,30
+
+[Color4Intense]
+Color=255,160,80
+
+
+# --- ANSI 5 : Magenta / Visited ---
+[Color5]
+Color=180,120,220
+Comment=Visited / Magenta Accent
+
+[Color5Faint]
+Color=143,108,146
+
+[Color5Intense]
+Color=220,170,255
+
+
+# --- ANSI 6 : Cyan / Clay Highlight ---
+[Color6]
+Color=221,168,149
+Comment=Clay Highlight
+
+[Color6Faint]
+Color=185,125,105
+
+[Color6Intense]
+Color=243,230,233
+
+
+# --- ANSI 7 : White / Foreground ---
+[Color7]
+Color=243,230,233
+Comment=Primary Foreground
+
+[Color7Faint]
+Color=173,153,146
+
+[Color7Intense]
+Color=252,245,246
+
+
+# --- Foreground Control ---
+[Foreground]
+Color=243,230,233
+
+[ForegroundFaint]
+Color=173,153,146
+
+[ForegroundIntense]
+Color=252,245,246
+
+
+# --- General ---
+[General]
+Anchor=0.5,0.5
+Blur=false
+ColorRandomization=false
+Description=Batsu Earth
+FillStyle=Tile
+Opacity=1
+Wallpaper=
+WallpaperFlipType=NoFlip
+WallpaperOpacity=1
+

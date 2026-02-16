@@ -6,35 +6,42 @@
 	<key>gutterSettings</key>
 	<dict>
 		<key>background</key>
-		<string>#201A18</string>
+		<string>#332c2c</string>
 		<key>divider</key>
-		<string>#3A342E</string>
+		<string>#a6524c</string>
 		<key>foreground</key>
-		<string>#66584E</string>
+		<string>#959c94</string>
 	</dict>
+
 	<key>name</key>
-	<string>Batsu Earth</string>
+	<string>Batsu Molten</string>
+
 	<key>semanticClass</key>
-	<string>theme.dark.batsu_earth</string>
+	<string>theme.dark.batsu_molten</string>
+
 	<key>settings</key>
 	<array>
+
+		<!-- Global -->
 		<dict>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#110D0B</string>
+				<string>#332c2c</string>
 				<key>caret</key>
-				<string>#F3E6E9</string>
+				<string>#dda895</string>
 				<key>foreground</key>
-				<string>#F3E6E9</string>
+				<string>#f7ecef</string>
 				<key>invisibles</key>
-				<string>#3A342E</string>
+				<string>#a6524c</string>
 				<key>lineHighlight</key>
-				<string>#201A18</string>
+				<string>#5c5d5d</string>
 				<key>selection</key>
-				<string>#563025</string>
+				<string>#e34b3e</string>
 			</dict>
 		</dict>
+
+		<!-- Comment -->
 		<dict>
 			<key>name</key>
 			<string>Comment</string>
@@ -43,9 +50,11 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#66584E</string>
+				<string>#8c7665</string>
 			</dict>
 		</dict>
+
+		<!-- String -->
 		<dict>
 			<key>name</key>
 			<string>String</string>
@@ -54,9 +63,11 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#DDA895</string>
+				<string>#dda895</string>
 			</dict>
 		</dict>
+
+		<!-- Number -->
 		<dict>
 			<key>name</key>
 			<string>Number</string>
@@ -65,9 +76,11 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#D86432</string>
+				<string>#d18a5e</string>
 			</dict>
 		</dict>
+
+		<!-- Built-in constant -->
 		<dict>
 			<key>name</key>
 			<string>Built-in constant</string>
@@ -76,9 +89,11 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#8F6C92</string>
+				<string>#a580a1</string>
 			</dict>
 		</dict>
+
+		<!-- Keyword -->
 		<dict>
 			<key>name</key>
 			<string>Keyword</string>
@@ -87,9 +102,11 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#D5441C</string>
+				<string>#ff5623</string>
 			</dict>
 		</dict>
+
+		<!-- Storage -->
 		<dict>
 			<key>name</key>
 			<string>Storage</string>
@@ -98,9 +115,11 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#D5441C</string>
+				<string>#ff5623</string>
 			</dict>
 		</dict>
+
+		<!-- Storage type -->
 		<dict>
 			<key>name</key>
 			<string>Storage type</string>
@@ -111,9 +130,11 @@
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#935845</string>
+				<string>#eb8d6e</string>
 			</dict>
 		</dict>
+
+		<!-- Function name -->
 		<dict>
 			<key>name</key>
 			<string>Function name</string>
@@ -122,9 +143,11 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#DDA895</string>
+				<string>#ff7a3f</string>
 			</dict>
 		</dict>
+
+		<!-- Function argument -->
 		<dict>
 			<key>name</key>
 			<string>Function argument</string>
@@ -135,9 +158,11 @@
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#AD9992</string>
+				<string>#959c94</string>
 			</dict>
 		</dict>
+
+		<!-- Tag name -->
 		<dict>
 			<key>name</key>
 			<string>Tag name</string>
@@ -146,9 +171,11 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#D5441C</string>
+				<string>#ac1f16</string>
 			</dict>
 		</dict>
+
+		<!-- Library function -->
 		<dict>
 			<key>name</key>
 			<string>Library function</string>
@@ -157,11 +184,15 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#8F6C92</string>
+				<string>#a580a1</string>
 			</dict>
 		</dict>
+
 	</array>
+
 	<key>uuid</key>
 	<string>7A1E1026-F6B2-4C1A-BD9E-E1A2B3C4D5E6</string>
+
 </dict>
 </plist>
+

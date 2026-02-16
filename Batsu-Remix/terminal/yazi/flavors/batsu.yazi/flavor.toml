@@ -1,128 +1,143 @@
-#----------------------------------------------------------
-#--  FLAVOR: Batsu Earth (Recolored from Kanagawa)
-#----------------------------------------------------------
+"$schema" = "https://yazi-rs.github.io/schemas/theme.json"
 
-[manager]
-# Marker colors mapped to Batsu Tones
-marker_copied = { fg = "#935845", bg = "#935845" }
-marker_cut = { fg = "#D5441C", bg = "#D5441C" }
-marker_marked = { fg = "#8F6C92", bg = "#8F6C92" }
-marker_selected = { fg = "#D86432", bg = "#D86432" }
-
-cwd = { fg = "#DDA895" }
-
-# Square selection bars: removing rounded corners via prefix/suffix
-hovered = { bg = "#201A18", fg = "#F3E6E9", bold = true }
-prefix = { open = "", close = "" }
-suffix = { open = "", close = "" }
-
-preview_hovered = { bg = "#201A18", fg = "#DDA895", underline = true }
-
-find_keyword = { fg = "#D5441C", bg = "#110D0B", bold = true, italic = true }
-find_position = { fg = "#8F6C92", bg = "reset" }
-
-tab_active = { fg = "#110D0B", bg = "#DDA895", bold = true }
-tab_inactive = { fg = "#AD9992", bg = "#201A18" }
-tab_width = 1
-
-count_copied = { fg = "#F3E6E9", bg = "#935845" }
-count_cut = { fg = "#F3E6E9", bg = "#D5441C" }
-count_selected = { fg = "#110D0B", bg = "#DDA895" }
-
+[mgr]
+cwd = { fg = "#ff7a3f" } # Chocolate (accent)
+find_keyword = { fg = "#dda895", bold = true, italic = true, underline = true } # Tan
+find_position = { fg = "#d18a5e", bg = "reset", bold = true, italic = true } # Peru
+symlink_target = { italic = true }
+marker_copied = { fg = "#ff5623", bg = "#ff5623" } # Chocolate (strong accent)
+marker_cut = { fg = "#ac1f16", bg = "#ac1f16" } # Firebrick (danger)
+marker_marked = { fg = "#a580a1", bg = "#a580a1" } # Muted purple accent
+marker_selected = { fg = "#dda895", bg = "#dda895" } # Tan highlight
+count_copied = { fg = "#332c2c", bg = "#ff5623" }
+count_cut = { fg = "#332c2c", bg = "#ac1f16" }
+count_selected = { fg = "#332c2c", bg = "#dda895" }
 border_symbol = "│"
-border_style = { fg = "#3A342E" }
+border_style = { fg = "#e34b3e" } # Saddle Brown
 
+[tabs]
+active = { fg = "#332c2c", bg = "#ff7a3f", bold = true }
+inactive = { fg = "#ff7a3f", bg = "#5c5d5d" }
+sep_inner = { open = "", close = "" }
+sep_outer = { open = "", close = "" }
 
 [mode]
-# Normal mode matches your Oh-My-Posh Path color
-normal_main = { fg = "#110D0B", bg = "#D86432", bold = true }
-normal_alt = { fg = "#D86432", bg = "#201A18" }
-select_main = { fg = "#F3E6E9", bg = "#8F6C92", bold = true }
-select_alt = { fg = "#8F6C92", bg = "#201A18" }
-unset_main = { fg = "#F3E6E9", bg = "#D5441C", bold = true }
-unset_alt = { fg = "#D5441C", bg = "#201A18" }
+normal_main = { fg = "#332c2c", bg = "#ff7a3f", bold = true }
+normal_alt = { fg = "#ff7a3f", bg = "#474747" }
+select_main = { fg = "#332c2c", bg = "#a580a1", bold = true }
+select_alt = { fg = "#a580a1", bg = "#474747" }
+unset_main = { fg = "#332c2c", bg = "#ac1f16", bold = true }
+unset_alt = { fg = "#ac1f16", bg = "#474747" }
 
+[indicator]
+parent = { reversed = true, fg = "#ff7a3f" }
+current = { reversed = true, fg = "#ff7a3f" }
+preview = { underline = true, fg = "#ff7a3f" }
+padding = { open = "█", close = "█" }
 
 [status]
-# Explicitly removing rounded separators for a sharp look
+overall = { fg = "#f7ecef", bg = "#332c2c" }
 sep_left = { open = "", close = "" }
 sep_right = { open = "", close = "" }
-overall = { fg = "#F3E6E9", bg = "#110D0B" }
+perm_sep = { fg = "#a3a1a3" }
+perm_type = { fg = "#ff7a3f" }
+perm_read = { fg = "#dda895" }
+perm_write = { fg = "#ac1f16" }
+perm_exec = { fg = "#ff5623" }
+progress_label = { fg = "#f7ecef", bold = true }
+progress_normal = { fg = "#a580a1", bg = "#5c5d5d" }
+progress_error = { fg = "#332c2c", bg = "#ac1f16" }
 
-progress_label = { fg = "#DDA895", bg = "#201A18", bold = true }
-progress_normal = { fg = "#201A18", bg = "#110D0B" }
-progress_error = { fg = "#D5441C", bg = "#110D0B" }
+[which]
+cols = 3
+mask = { bg = "#332c2c" } # Dark Slate Gray (deep background)
+cand = { fg = "#ff7a3f", bold = true } # Chocolate (primary accent)
+rest = { fg = "#959c94" } # Muted gray-green neutral
+desc = { fg = "#959c94", italic = true }
+separator = " → "
+separator_style = { fg = "#dda895" }
 
-perm_type = { fg = "#935845" }
-perm_read = { fg = "#DDA895" }
-perm_write = { fg = "#D5441C" }
-perm_exec = { fg = "#8F6C92" }
-perm_sep = { fg = "#3A342E" }
+[confirm]
+border = { fg = "#ff7a3f", bold = true } # Chocolate
+title = { fg = "#ff7a3f" }
+body = { fg = "#959c94" } # Muted neutral
+list = { fg = "#f7ecef" } # Linen (bright text)
+btn_yes = { fg = "#332c2c", bg = "#dda895", bold = true } # Tan button
+btn_no = { fg = "#a3a1a3" }
+btn_labels = ["  [Y]es  ", "  (N)o  "]
 
+[spot]
+border = { fg = "#ff7a3f", bold = true }
+title = { fg = "#ff7a3f" }
+tbl_col = { fg = "#959c94" }
+tbl_cell = { fg = "#332c2c", bg = "#dda895", bold = true }
+
+[notify]
+title_info = { fg = "#ff5623" }    # Strong accent
+title_warn = { fg = "#d18a5e" }    # Peru (warning tone)
+title_error = { fg = "#ac1f16" }   # Firebrick (danger)
+icon_info = "ℹ"   # Unicode INFO symbol
+icon_warn = "⚠"   # Unicode WARNING
+icon_error = "✖"  # Unicode heavy cross
 
 [pick]
-border = { fg = "#8F6C92" }
-active = { fg = "#D86432", bold = true }
-inactive = {}
+border = { fg = "#ff7a3f", bold = true }
+active = { fg = "#ff7a3f", bold = true }
+inactive = { fg = "#959c94" }
 
 [input]
-border = { fg = "#DDA895" }
-title = {}
-value = {}
+border = { fg = "#ff7a3f", bold = true }
+title = { fg = "#ff7a3f" }
+value = { fg = "#f7ecef" }
 selected = { reversed = true }
 
-[completion]
-border = { fg = "#DDA895" }
+[cmp]
+border = { fg = "#ff7a3f", bold = true }
 active = { reversed = true }
 inactive = {}
 
 [tasks]
-border = { fg = "#8F6C92" }
-title = {}
-hovered = { fg = "#D86432" }
-
-[which]
-cols = 2
-separator = " - "
-separator_style = { fg = "#AD9992" }
-mask = { bg = "#110D0B" }
-rest = { fg = "#AD9992" }
-cand = { fg = "#DDA895" }
-desc = { fg = "#8F6C92" }
+border = { fg = "#ff7a3f", bold = true }
+title = { fg = "#ff7a3f" }
+hovered = { fg = "#a580a1", bold = true } # Muted purple accent
 
 [help]
-on = { fg = "#8F6C92" }
-run = { fg = "#D86432" }
-desc = {}
-hovered = { reversed = true, bold = true }
-footer = { fg = "#110D0B", bg = "#F3E6E9" }
-
-[notify]
-title_info = { fg = "#935845" }
-title_warn = { fg = "#DDA895" }
-title_error = { fg = "#D5441C" }
+on = { fg = "#ff7a3f" }
+run = { fg = "#a580a1" }
+desc = { fg = "#959c94" }
+hovered = { bg = "#5c5d5d", bold = true }
+footer = { fg = "#f7ecef", bg = "#5c5d5d" }
 
 [filetype]
 rules = [
-    # images
-    { mime = "image/*", fg = "#DDA895" },
+  # Image
+  { mime = "image/*", fg = "#ff7a3f" },
 
-    # media
-    { mime = "{audio,video}/*", fg = "#935845" },
+  # Media
+  { mime = "video/*", fg = "#d18a5e" },
+  { mime = "audio/*", fg = "#d18a5e" },
 
-    # archives
-    { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#D5441C" },
+  # Archive
+  { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#a580a1" },
 
-    # documents
-    { mime = "application/{pdf,doc,rtf,vnd.*}", fg = "#F3E6E9" },
+  # Document
+  { mime = "application/{pdf,doc,rtf}", fg = "#ff5623" },
 
-    # broken links
-    { name = "*", is = "orphan", fg = "#D5441C", bg = "#110D0B" },
+  # Virtual file system
+  { mime = "vfs/{absent,stale}", fg = "#959c94" },
 
-    # executables
-    { name = "*", is = "exec", fg = "#8F6C92", bold = true },
+  # Special file
+  { url = "*", is = "orphan", bg = "#ac1f16" },
+  { url = "*", is = "exec", fg = "#ff5623" },
 
-    # fallback
-    { name = "*", fg = "#F3E6E9" },
-    { name = "*/", fg = "#AD9992", bold = true },
+  # Symbolic link
+  { url = "*", is = "link", fg = "#ff7a3f" },
+
+  # Dummy file
+  { url = "*", is = "dummy", bg = "#e34b3e" },
+  { url = "*/", is = "dummy", bg = "#e34b3e" },
+
+  # Fallback
+  { url = "*/", fg = "#a580a1" },
 ]
+
