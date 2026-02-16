@@ -16,7 +16,7 @@ Perfect for lazy perfectionists™.
 
 - 🌑 **Batsu-Remix** theme applied system-wide.
 - 😖 Our bro Tatsuya Suo contemplating his life choices 🥲.
-- 🔢 Devnagri numbers using the [Kara](https://www.pling.com/p/2200890) widget..
+- 🔢 Devnagri numbers using the [Kara](https://github.com/dhruv8sh/kara/) widget..
 - 🎨 App icons themed with [Papirus](https://www.pling.com/p/1166289/).
 - 🧠 Fonts used like a nerd who cares:
   - **Terminal** → [Departure Mono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/DepartureMono.zip)
