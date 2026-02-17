@@ -1,19 +1,19 @@
 "$schema" = "https://yazi-rs.github.io/schemas/theme.json"
 
 [mgr]
-cwd = { fg = "#ff7a3f" } # Chocolate (accent)
-find_keyword = { fg = "#dda895", bold = true, italic = true, underline = true } # Tan
-find_position = { fg = "#d18a5e", bg = "reset", bold = true, italic = true } # Peru
+cwd = { fg = "#ff7a3f" }
+find_keyword = { fg = "#dda895", bold = true, italic = true, underline = true }
+find_position = { fg = "#d18a5e", bg = "reset", bold = true, italic = true }
 symlink_target = { italic = true }
-marker_copied = { fg = "#ff5623", bg = "#ff5623" } # Chocolate (strong accent)
-marker_cut = { fg = "#ac1f16", bg = "#ac1f16" } # Firebrick (danger)
-marker_marked = { fg = "#a580a1", bg = "#a580a1" } # Muted purple accent
-marker_selected = { fg = "#dda895", bg = "#dda895" } # Tan highlight
+marker_copied = { fg = "#ff5623", bg = "#ff5623" }
+marker_cut = { fg = "#ac1f16", bg = "#ac1f16" }
+marker_marked = { fg = "#a580a1", bg = "#a580a1" }
+marker_selected = { fg = "#dda895", bg = "#dda895" }
 count_copied = { fg = "#332c2c", bg = "#ff5623" }
 count_cut = { fg = "#332c2c", bg = "#ac1f16" }
 count_selected = { fg = "#332c2c", bg = "#dda895" }
 border_symbol = "│"
-border_style = { fg = "#e34b3e" } # Saddle Brown
+border_style = { fg = "#e34b3e" }
 
 [tabs]
 active = { fg = "#332c2c", bg = "#ff7a3f", bold = true }
@@ -50,19 +50,19 @@ progress_error = { fg = "#332c2c", bg = "#ac1f16" }
 
 [which]
 cols = 3
-mask = { bg = "#332c2c" } # Dark Slate Gray (deep background)
-cand = { fg = "#ff7a3f", bold = true } # Chocolate (primary accent)
-rest = { fg = "#959c94" } # Muted gray-green neutral
+mask = { bg = "#332c2c" }
+cand = { fg = "#ff7a3f", bold = true }
+rest = { fg = "#959c94" }
 desc = { fg = "#959c94", italic = true }
 separator = " → "
 separator_style = { fg = "#dda895" }
 
 [confirm]
-border = { fg = "#ff7a3f", bold = true } # Chocolate
+border = { fg = "#ff7a3f", bold = true }
 title = { fg = "#ff7a3f" }
-body = { fg = "#959c94" } # Muted neutral
-list = { fg = "#f7ecef" } # Linen (bright text)
-btn_yes = { fg = "#332c2c", bg = "#dda895", bold = true } # Tan button
+body = { fg = "#959c94" }
+list = { fg = "#f7ecef" }
+btn_yes = { fg = "#332c2c", bg = "#dda895", bold = true }
 btn_no = { fg = "#a3a1a3" }
 btn_labels = ["  [Y]es  ", "  (N)o  "]
 
@@ -73,12 +73,12 @@ tbl_col = { fg = "#959c94" }
 tbl_cell = { fg = "#332c2c", bg = "#dda895", bold = true }
 
 [notify]
-title_info = { fg = "#ff5623" }    # Strong accent
-title_warn = { fg = "#d18a5e" }    # Peru (warning tone)
-title_error = { fg = "#ac1f16" }   # Firebrick (danger)
-icon_info = "ℹ"   # Unicode INFO symbol
-icon_warn = "⚠"   # Unicode WARNING
-icon_error = "✖"  # Unicode heavy cross
+title_info = { fg = "#ff5623" }
+title_warn = { fg = "#d18a5e" }
+title_error = { fg = "#ac1f16" }
+icon_info = "ℹ"
+icon_warn = "⚠"
+icon_error = "✖"
 
 [pick]
 border = { fg = "#ff7a3f", bold = true }
@@ -99,7 +99,7 @@ inactive = {}
 [tasks]
 border = { fg = "#ff7a3f", bold = true }
 title = { fg = "#ff7a3f" }
-hovered = { fg = "#a580a1", bold = true } # Muted purple accent
+hovered = { fg = "#a580a1", bold = true }
 
 [help]
 on = { fg = "#ff7a3f" }
@@ -140,4 +140,3 @@ rules = [
   # Fallback
   { url = "*/", fg = "#a580a1" },
 ]
-
