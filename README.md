@@ -4,7 +4,7 @@ This is what happens when you **want that minimalist WM look**...
 but can’t commit to 500 lines of `config` and Lua sorcery 😅  
 (**Spoiler:** I still ended up editing config files anyway.)
 
-Persona 2 duology is one of my favorite games so I just took the colors from the two wallpapers related to that game and created my own color scheme called **Batsu-Remix** and riced my desktop according to it.
+Persona 2 duology is one of my favorite games so I just took the colors from the two wallpapers related to that game and created my own config called **Batsu-Remix** and riced my desktop according to it.
 Looks like a window manager, behaves like a DE.  
 Perfect for lazy perfectionists™.
 
