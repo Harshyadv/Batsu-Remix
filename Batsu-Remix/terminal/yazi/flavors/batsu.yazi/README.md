@@ -12,7 +12,7 @@
 
 ## 👀 Preview
 
-<img src="../preview.png" width="600" alt="Batsu Preview" />
+<img src="./preview.png" width="600" alt="Batsu Preview" />
 
 ## 🎨 Manual Installation
 
@@ -36,10 +36,10 @@ use = "batsu"
 
 ## ✨ Credits
 
-This flavor is based on the structure of [Eldritch](). It features replaced Unicode symbols and a unique color palette.
+This flavor is based on the structure of [Eldritch](https://github.com/6ruby1/eldritch.yazi). It features replaced Unicode symbols and a unique color palette.
 
 ## 📜 License
 
 The flavor is **MIT-licensed**, and the included `tmTheme` is also **MIT-licensed**.
 
-Check the [LICENSE]() and [LICENSE-tmtheme]() files for more details.
+Check the [LICENSE](./LICENSE) and [LICENSE-tmtheme](./LICENSE-tmtheme) files for more details.
