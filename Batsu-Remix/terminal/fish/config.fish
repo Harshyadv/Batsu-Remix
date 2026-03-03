@@ -1,3 +1,6 @@
+#Path added
+fish_add_path ~/.local/bin/
+
 if status is-interactive
     # Commands to run in interactive sessions can go here
     function fish_greeting
@@ -6,8 +9,7 @@ if status is-interactive
     # Set Neovim as the default editor
     set -gx EDITOR nvim
     set -gx VISUAL nvim
-    oh-my-posh init fish --config ~/path/to/stelbent-batsu-remix.omp.json | source
+    oh-my-posh init fish --config ~/Configuration/terminalthemes/stelbent-batsu-remix.omp.json | source
 
 end
-
 
