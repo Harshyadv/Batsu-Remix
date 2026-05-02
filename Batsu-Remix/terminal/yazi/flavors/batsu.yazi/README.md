@@ -3,7 +3,7 @@
 </div>
 
 <h1 align="center">
-	Batsu 
+    Batsu 
 </h1>
 
 <p align="center">
@@ -19,9 +19,10 @@
 Since this flavor is in development, you can install it manually:
 
 1. Create the flavor directory:
-```sh
-mkdir -p ~/.config/yazi/flavors/batsu-molten.yazi
-```
+   
+   ```sh
+   mkdir -p ~/.config/yazi/flavors/batsu.yazi
+   ```
 
 2. Move your `flavor.toml` and `tmtheme.xml` into that folder.
 
